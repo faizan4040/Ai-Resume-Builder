@@ -36,7 +36,7 @@ const Header = () => {
                 <span className="hidden md:block">Industry Insights</span>
               </Button>
             </Link>
-          </SignedIn>
+         
 
           <DropdownMenu>
             <DropdownMenuTrigger>
@@ -70,6 +70,7 @@ const Header = () => {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+          </SignedIn>
 
                 <SignedOut>
                     <SignInButton />
@@ -81,12 +82,12 @@ const Header = () => {
                     <UserButton 
                     appearance={{
                         elements:{
-                            avatarBox: "h-10 w-10",
-                            userButtonPopoverCard: "shadow-xl",
-                            userPreviewMainIdentifier: "font-semibold",
+                        avatarBox: "h-10 w-10",
+                        userButtonPopoverCard: "shadow-xl",
+                        userPreviewMainIdentifier: "font-semibold",
                         }
                     }}
-                    />
+                />
                 </SignedIn>
         </div>
       </nav>
