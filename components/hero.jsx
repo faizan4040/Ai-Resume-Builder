@@ -19,6 +19,8 @@ useEffect(()=>{
         
         if (scrollPosition > scrollThreshold){
             imageElement.classList.add("scrolled");
+        } else{
+            imageElement.classList.remove("scrolled");
         }
     };
 
@@ -44,13 +46,13 @@ useEffect(()=>{
 
         <div className='space-x-4'>
             <Link href="/dashboard">
-               <Button size="lg" className="px-8">
+               <Button size="lg" className="px-8 cursor-pointer">
                 Get Started
                </Button>
             </Link>
 
             <Link href="https://www.youtube.com/roadsidecoder">
-               <Button size="lg" className="px-8" variant="outline">
+               <Button size="lg" className="px-8 cursor-pointer" variant="outline">
                 Get Started
                </Button>
             </Link>

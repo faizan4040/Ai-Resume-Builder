@@ -167,7 +167,7 @@ background: radial-gradient(circle, transparent, rgba(0,0,0,0.9));
 }
 
 .hero-image {
-  transform: rotateX(15dge) scale(1);
+  transform: rotateX(15deg) scale(1);
   transition: transform 0.5s ease-out;
   will-change: transform;
 }
