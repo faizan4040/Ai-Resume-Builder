@@ -2,7 +2,6 @@ import {
   SignedIn,
   SignedOut,
   SignInButton,
-  SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
 import Link from "next/link";
@@ -47,7 +46,7 @@ const Header = async () => {
           <SignedIn>
             <Link href={"/dashboard"}>
               <Button variant={"outline"}>
-                <LayoutDashboard className="mr-2 h-4 w-4" />
+                <LayoutDashboard className="mr-2 h-4 w-4"/>
                 <span className="hidden md:block">Industry Insights</span>
               </Button>
             </Link>
@@ -90,9 +89,9 @@ const Header = async () => {
           </SignedIn>
 
           <SignedOut>
-            <SignInButton />
+            <SignInButton>
             <Button variant="outline">Sign In</Button>
-            <SignUpButton />
+            </SignInButton>
           </SignedOut>
 
           <SignedIn>
